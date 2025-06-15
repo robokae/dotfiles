@@ -1,0 +1,54 @@
+@theme "/dev/null/"
+* {
+    bgColor: #2e3440ff;
+    fgColor: #2e3440ff;
+    background-color: @bgColor;
+    text-color: #eceff4;
+    highlight: bold #88c0d0;
+    width: 800px;
+    lines: 8;
+    border-radius: 2px;
+}
+
+configuration {
+    font: "JetBrainsMono 12";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "Search:";
+}
+
+window {
+    padding: 16px;
+    border: 1.5px;
+}
+
+listview {
+    scrollbar: false;
+}
+
+inputbar {
+    background-color: @fgColor;
+    padding: 8px;
+    spacing: 8px;
+}
+
+prompt, entry, case-indicator {
+    background-color: @fgColor;
+}
+
+element {
+    spacing: 12px;
+    padding: 12px;
+}
+
+element selected.normal {
+    background-color: #3b4252ff;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+}
+
+element-icon {
+    size: 2.5ch;
+}
